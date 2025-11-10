@@ -38,12 +38,6 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
     return password;
 }
 
-// const passwordLength = 67;
-// const includeLowercase = true;
-// const includeUppercase = true;
-// const includeNumbers = true;
-// const includeSymbols = true;
-
 submit.onclick = function(){
     const passwordLength = length.value;
     const includeLowercase = lowercase.checked ? true : false;
@@ -58,4 +52,5 @@ submit.onclick = function(){
                                     includeSymbols);
     result.textContent = `Password: ${password}`;
     console.log(`Generated password: ${password}`)
+
 }
